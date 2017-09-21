@@ -22,6 +22,7 @@ set autoindent          " keep indentation when breaking lines
 set noshowmode          " don't show the -- INSERT -- text
 set laststatus=2        " always show the status bar
 
+set ttymouse=xterm2
 set mouse=a             " scroll in vim, not history
 set ttimeoutlen=10      " reduce delay when leaving INSERT mode
 
@@ -41,6 +42,3 @@ let g:airline_theme='solarized'
 let g:airline_solarized_bg='dark'
 let g:airline_solarized_dark_inactive_border=1
 
-" remap ; to :
-nnoremap ; :
-vnoremap ; :
