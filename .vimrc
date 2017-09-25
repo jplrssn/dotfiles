@@ -3,7 +3,7 @@ set hidden
 
 execute pathogen#infect('pathogen/{}')
 
-colorscheme solarized
+colorscheme solarized8_dark_flat
 set background=dark
 
 syntax on
