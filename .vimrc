@@ -6,6 +6,8 @@ execute pathogen#infect('pathogen/{}')
 colorscheme solarized8_dark_flat
 set background=dark
 
+set directory=~/.vim/swapfiles//
+
 syntax on
 
 set nowrap              " disable visual line breaking
