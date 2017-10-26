@@ -3,6 +3,9 @@ set hidden
 
 execute pathogen#infect('pathogen/{}')
 
+set encoding=utf-8
+set termencoding=utf-8
+
 colorscheme solarized8_dark_flat
 set background=dark
 
