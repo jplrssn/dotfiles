@@ -22,3 +22,9 @@
 [submodule ".vim/pathogen/vim-gitgutter"]
 	path = .vim/pathogen/vim-gitgutter
 	url = git://github.com/airblade/vim-gitgutter.git
+[submodule ".vim/pathogen/ctrlp.vim"]
+	path = .vim/pathogen/ctrlp.vim
+	url = https://github.com/kien/ctrlp.vim
+[submodule ".vim/pathogen/vim-commentary.git"]
+	path = .vim/pathogen/vim-commentary.git
+	url = git://github.com/tpope/vim-commentary.git
