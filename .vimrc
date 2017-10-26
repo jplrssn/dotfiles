@@ -47,3 +47,8 @@ let g:airline_solarized_dark_inactive_border=1
 " Close buffer but keep split window open
 nmap ,d :b#<bar>bd#<bar>b<CR>
 
+let g:gitgutter_sign_added = '· '
+let g:gitgutter_sign_modified = '· '
+let g:gitgutter_sign_removed = '· '
+let g:gitgutter_sign_removed_first_line = '· '
+let g:gitgutter_sign_modified_removed = '· '
