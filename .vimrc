@@ -50,6 +50,9 @@ let g:airline_solarized_dark_inactive_border=1
 " Close buffer but keep split window open
 nmap ,d :b#<bar>bd#<bar>b<CR>
 
+map <ScrollWheelUp> <C-Y>
+map <ScrollWheelDown> <C-E>
+
 let g:gitgutter_sign_added = '· '
 let g:gitgutter_sign_modified = '· '
 let g:gitgutter_sign_removed = '· '
