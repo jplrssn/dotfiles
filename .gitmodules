@@ -7,9 +7,6 @@
 [submodule ".vim/pathogen/nerdtree"]
 	path = .vim/pathogen/nerdtree
 	url = https://github.com/scrooloose/nerdtree
-[submodule ".vim/pathogen/syntastic"]
-	path = .vim/pathogen/syntastic
-	url = https://github.com/vim-syntastic/syntastic
 [submodule ".vim/pathogen/vim-bufferline"]
 	path = .vim/pathogen/vim-bufferline
 	url = https://github.com/bling/vim-bufferline
