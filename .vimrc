@@ -66,3 +66,8 @@ let g:gitgutter_sign_modified = '· '
 let g:gitgutter_sign_removed = '· '
 let g:gitgutter_sign_removed_first_line = '· '
 let g:gitgutter_sign_modified_removed = '· '
+
+let g:ctrlp_working_path_mode = 'ra'
+" Make ctrlp ignore files from gitignore
+" From https://github.com/kien/ctrlp.vim/issues/174
+let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
