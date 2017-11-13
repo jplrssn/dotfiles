@@ -55,6 +55,12 @@ nmap ,d :b#<bar>bd#<bar>b<CR>
 map <ScrollWheelUp> <C-Y>
 map <ScrollWheelDown> <C-E>
 
+" replace Ctrl-W
+noremap <Esc>[A <C-w><up>
+noremap <Esc>[B <C-w><down>
+noremap <Esc>[C <C-w><right>
+noremap <Esc>[D <C-w><left>
+
 let g:gitgutter_sign_added = '· '
 let g:gitgutter_sign_modified = '· '
 let g:gitgutter_sign_removed = '· '
