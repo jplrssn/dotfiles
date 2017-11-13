@@ -47,6 +47,8 @@ let g:airline_theme='solarized'
 let g:airline_solarized_bg='dark'
 let g:airline_solarized_dark_inactive_border=1
 
+let mapleader = ' '
+
 " Close buffer but keep split window open
 nmap ,d :b#<bar>bd#<bar>b<CR>
 
