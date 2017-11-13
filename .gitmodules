@@ -25,3 +25,6 @@
 [submodule ".vim/pathogen/vim-commentary.git"]
 	path = .vim/pathogen/vim-commentary.git
 	url = git://github.com/tpope/vim-commentary.git
+[submodule ".zsh/plugins/zsh-history-substring-search"]
+	path = .zsh/plugins/zsh-history-substring-search
+	url = git://github.com/zsh-users/zsh-history-substring-search

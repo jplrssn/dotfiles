@@ -13,7 +13,7 @@ export EDITOR=$VISUAL
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 
 # History substring search
-source $HOME/.zsh/zsh-history-substring-search.zsh
+source $HOME/.zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
 
 source $HOME/.zsh/prompt.zsh
 source $HOME/.zsh/keys.zsh
