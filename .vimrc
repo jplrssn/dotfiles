@@ -27,7 +27,7 @@ set autoindent          " keep indentation when breaking lines
 set noshowmode          " don't show the -- INSERT -- text
 set laststatus=2        " always show the status bar
 
-set ttymouse=xterm2
+set ttymouse=sgr
 set mouse=a             " scroll in vim, not history
 set ttimeoutlen=10      " reduce delay when leaving INSERT mode
 
