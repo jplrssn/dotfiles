@@ -1,2 +1,2 @@
-export PROMPT='%m | %~ > '
+export PROMPT='%m %~ > '
 

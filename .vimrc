@@ -33,6 +33,7 @@ set ttimeoutlen=10      " reduce delay when leaving INSERT mode
 
 set showmatch           " show matching [{( )}]
 set hlsearch            " highlight search matches
+set incsearch           " search while typing
 
 " do not echo to command bar
 let g:bufferline_echo = 0
