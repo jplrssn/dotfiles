@@ -35,6 +35,10 @@ set showmatch           " show matching [{( )}]
 set hlsearch            " highlight search matches
 set incsearch           " search while typing
 
+set number              " show line numbers
+set cursorline          " highlight the current line number
+highlight CursorLine cterm=none ctermbg=none ctermfg=none
+
 " do not echo to command bar
 let g:bufferline_echo = 0
 
