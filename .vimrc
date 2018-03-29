@@ -37,7 +37,7 @@ set incsearch           " search while typing
 
 set number              " show line numbers
 set cursorline          " highlight the current line number
-highlight CursorLine cterm=none ctermbg=none ctermfg=none
+hi CursorLine term=none cterm=none gui=none
 
 " do not echo to command bar
 let g:bufferline_echo = 0
