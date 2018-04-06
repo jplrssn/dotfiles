@@ -7,7 +7,7 @@ compinit
 promptinit
 
 export TERM="screen-256color"
-export VISUAL=vim
+export VISUAL=nvim
 export EDITOR=$VISUAL
 
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
