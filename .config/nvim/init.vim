@@ -11,6 +11,7 @@ Plug 'git://github.com/airblade/vim-gitgutter'
 Plug 'git://github.com/kien/ctrlp.vim'
 Plug 'git://github.com/bling/vim-bufferline'
 Plug 'git://github.com/mhinz/vim-grepper'
+Plug 'git://github.com/scrooloose/nerdtree'
 
 call plug#end()
 
@@ -96,3 +97,6 @@ nnoremap <Leader>b :CtrlPBuffer<CR>
 " for vim-grepper
 nnoremap <Leader>gf :Grepper<Space>-query<Space>
 nnoremap <Leader>gb :Grepper<Space>-buffers<Space>-query<Space>
+
+" NERDTree
+nnoremap <Leader>t :NERDTreeToggle<CR>
