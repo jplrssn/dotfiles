@@ -10,7 +10,6 @@ Plug 'git://github.com/vim-airline/vim-airline-themes'
 Plug 'git://github.com/airblade/vim-gitgutter'
 Plug 'git://github.com/kien/ctrlp.vim'
 Plug 'git://github.com/bling/vim-bufferline'
-Plug 'git://github.com/Yggdroot/indentLine'
 Plug 'git://github.com/mhinz/vim-grepper'
 
 call plug#end()
