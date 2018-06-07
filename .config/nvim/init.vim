@@ -13,6 +13,8 @@ Plug 'git://github.com/bling/vim-bufferline'
 Plug 'git://github.com/mhinz/vim-grepper'
 Plug 'git://github.com/scrooloose/nerdtree'
 
+Plug 'git://github.com/thinca/vim-visualstar'
+
 call plug#end()
 
 set encoding=utf-8
@@ -46,6 +48,9 @@ set ttimeoutlen=10      " reduce delay when leaving INSERT mode
 set showmatch           " show matching [{( )}]
 set hlsearch            " highlight search matches
 set incsearch           " search while typing
+
+set ignorecase          " need to have this to enable smartcase
+set smartcase           " ignore case for fully-lowercase searches
 
 set number              " show line numbers
 set cursorline          " highlight the current line number
