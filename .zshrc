@@ -6,6 +6,9 @@ autoload -Uz compinit promptinit
 compinit
 promptinit
 
+# Sync history between instances
+setopt share_history
+
 export TERM="screen-256color"
 export VISUAL=nvim
 export EDITOR=$VISUAL
