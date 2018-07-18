@@ -10,7 +10,7 @@ promptinit
 setopt share_history
 
 export TERM="screen-256color"
-export VISUAL=nvim
+export VISUAL=vim
 export EDITOR=$VISUAL
 
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
