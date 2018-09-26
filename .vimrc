@@ -11,8 +11,9 @@ Plug 'git://github.com/airblade/vim-gitgutter'
 Plug 'git://github.com/kien/ctrlp.vim'
 Plug 'git://github.com/mhinz/vim-grepper'
 Plug 'git://github.com/scrooloose/nerdtree'
-
 Plug 'git://github.com/thinca/vim-visualstar'
+Plug 'git://github.com/kshenoy/vim-signature'
+Plug 'liuchengxu/vim-which-key'
 
 call plug#end()
 
@@ -101,10 +102,18 @@ let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclu
 " shortcuts for CtrlP
 nnoremap <Leader>f :CtrlP<CR>
 nnoremap <Leader>b :CtrlPBuffer<CR>
+nnoremap <Leader>m :CtrlPMRU<CR>
+nnoremap <Leader>t :CtrlPTag<CR>
 
 " for vim-grepper
 nnoremap <Leader>gf :Grepper<Space>-query<Space>
 nnoremap <Leader>gb :Grepper<Space>-buffers<Space>-query<Space>
 
+vnoremap <Leader>gf y:Grepper<Space>-query<Space><C-r>"
+vnoremap <Leader>gb y:Grepper<Space>-buffers<Space>-query<Space><C-r>"
+
 " NERDTree
-nnoremap <Leader>t :NERDTreeToggle<CR>
+nnoremap <Leader>n :NERDTreeToggle<CR>
+
+nnoremap <silent> <leader> :WhichKey '<Space>'<CR>
+set timeoutlen=500
