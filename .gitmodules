@@ -1,30 +1,3 @@
-[submodule ".vim/pathogen/vim-airline"]
-	path = .vim/pathogen/vim-airline
-	url = https://github.com/vim-airline/vim-airline
-[submodule ".vim/pathogen/vim-airline-themes"]
-	path = .vim/pathogen/vim-airline-themes
-	url = https://github.com/vim-airline/vim-airline-themes
-[submodule ".vim/pathogen/nerdtree"]
-	path = .vim/pathogen/nerdtree
-	url = https://github.com/scrooloose/nerdtree
-[submodule ".vim/pathogen/vim-bufferline"]
-	path = .vim/pathogen/vim-bufferline
-	url = https://github.com/bling/vim-bufferline
-[submodule ".vim/pathogen/vim-colors-solarized"]
-	path = .vim/pathogen/vim-colors-solarized
-	url = git://github.com/altercation/vim-colors-solarized.git
-[submodule ".vim/pathogen/vim-solarized8"]
-	path = .vim/pathogen/vim-solarized8
-	url = https://github.com/lifepillar/vim-solarized8
-[submodule ".vim/pathogen/vim-gitgutter"]
-	path = .vim/pathogen/vim-gitgutter
-	url = git://github.com/airblade/vim-gitgutter.git
-[submodule ".vim/pathogen/ctrlp.vim"]
-	path = .vim/pathogen/ctrlp.vim
-	url = https://github.com/kien/ctrlp.vim
-[submodule ".vim/pathogen/vim-commentary.git"]
-	path = .vim/pathogen/vim-commentary.git
-	url = git://github.com/tpope/vim-commentary.git
 [submodule ".zsh/plugins/zsh-history-substring-search"]
 	path = .zsh/plugins/zsh-history-substring-search
 	url = git://github.com/zsh-users/zsh-history-substring-search
