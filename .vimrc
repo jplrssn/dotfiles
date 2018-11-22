@@ -13,7 +13,13 @@ Plug 'git://github.com/mhinz/vim-grepper'
 Plug 'git://github.com/scrooloose/nerdtree'
 Plug 'git://github.com/thinca/vim-visualstar'
 Plug 'git://github.com/kshenoy/vim-signature'
+
 Plug 'liuchengxu/vim-which-key'
+
+Plug 'prabirshrestha/asyncomplete.vim'
+Plug 'prabirshrestha/async.vim'
+Plug 'prabirshrestha/vim-lsp'
+Plug 'prabirshrestha/asyncomplete-lsp.vim'
 
 call plug#end()
 
@@ -117,3 +123,28 @@ nnoremap <Leader>n :NERDTreeToggle<CR>
 
 nnoremap <silent> <leader> :WhichKey '<Space>'<CR>
 set timeoutlen=500
+
+" Autocomplete
+let g:asyncomplete_smart_completion = 1
+let g:asyncomplete_auto_popup = 1
+
+"autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
+
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<cr>"
+
+nnoremap <Leader>sd :LspDefinition<CR>
+nnoremap <Leader>ss :LspDocumentSymbol<CR>
+nnoremap <Leader>si :LspHover<CR>
+nnoremap <Leader>sr :LspRename<CR>
+
+set cot-=preview
+
+if executable('clangd')
+    au User lsp_setup call lsp#register_server({
+        \ 'name': 'clangd',
+        \ 'cmd': {server_info->['clangd']},
+        \ 'whitelist': ['c', 'cpp', 'objc', 'objcpp'],
+        \ })
+endif
