@@ -13,6 +13,7 @@ Plug 'git://github.com/mhinz/vim-grepper'
 Plug 'git://github.com/scrooloose/nerdtree'
 Plug 'git://github.com/thinca/vim-visualstar'
 Plug 'git://github.com/kshenoy/vim-signature'
+Plug 'git://github.com/severin-lemaignan/vim-minimap'
 
 Plug 'liuchengxu/vim-which-key'
 
@@ -88,11 +89,10 @@ nmap ,d :b#<bar>bd#<bar>b<CR>
 map <ScrollWheelUp> <C-Y>
 map <ScrollWheelDown> <C-E>
 
-" replace Ctrl-W
-noremap <Esc>[A <C-w><up>
-noremap <Esc>[B <C-w><down>
-noremap <Esc>[C <C-w><right>
-noremap <Esc>[D <C-w><left>
+nnoremap <Leader>wh <c-w>h
+nnoremap <Leader>wj <c-w>j
+nnoremap <Leader>wk <c-w>k
+nnoremap <Leader>wl <c-w>l
 
 let g:gitgutter_sign_added = '· '
 let g:gitgutter_sign_modified = '· '
@@ -106,10 +106,10 @@ let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 
 " shortcuts for CtrlP
-nnoremap <Leader>f :CtrlP<CR>
-nnoremap <Leader>b :CtrlPBuffer<CR>
-nnoremap <Leader>m :CtrlPMRU<CR>
-nnoremap <Leader>t :CtrlPTag<CR>
+nnoremap <Leader>ff :CtrlP<CR>
+nnoremap <Leader>fb :CtrlPBuffer<CR>
+nnoremap <Leader>fm :CtrlPMRU<CR>
+nnoremap <Leader>ft :CtrlPTag<CR>
 
 " for vim-grepper
 nnoremap <Leader>gf :Grepper<Space>-query<Space>
@@ -138,6 +138,8 @@ nnoremap <Leader>sd :LspDefinition<CR>
 nnoremap <Leader>ss :LspDocumentSymbol<CR>
 nnoremap <Leader>si :LspHover<CR>
 nnoremap <Leader>sr :LspRename<CR>
+
+let g:minimap_toggle='<Leader>mm'
 
 set cot-=preview
 
