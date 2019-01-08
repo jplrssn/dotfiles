@@ -13,7 +13,7 @@ Plug 'git://github.com/mhinz/vim-grepper'
 Plug 'git://github.com/scrooloose/nerdtree'
 Plug 'git://github.com/thinca/vim-visualstar'
 Plug 'git://github.com/kshenoy/vim-signature'
-Plug 'git://github.com/severin-lemaignan/vim-minimap'
+Plug 'https://github.com/tpope/vim-surround'
 
 Plug 'liuchengxu/vim-which-key'
 
@@ -148,5 +148,13 @@ if executable('clangd')
         \ 'name': 'clangd',
         \ 'cmd': {server_info->['clangd']},
         \ 'whitelist': ['c', 'cpp', 'objc', 'objcpp'],
+        \ })
+endif
+
+if executable('pyls')
+    au User lsp_setup call lsp#register_server({
+        \ 'name': 'pyls',
+        \ 'cmd': {server_info->['pyls']},
+        \ 'whitelist': ['python'],
         \ })
 endif
