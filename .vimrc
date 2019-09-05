@@ -111,6 +111,10 @@ nnoremap <Leader>fb :CtrlPBuffer<CR>
 nnoremap <Leader>fm :CtrlPMRU<CR>
 nnoremap <Leader>ft :CtrlPTag<CR>
 
+" tag shortcuts
+nnoremap <Leader>tn :tnext<CR>
+nnoremap <Leader>tp :tprev<CR>
+
 " for vim-grepper
 nnoremap <Leader>gf :Grepper<Space>-query<Space>
 nnoremap <Leader>gb :Grepper<Space>-buffers<Space>-query<Space>
@@ -119,7 +123,11 @@ vnoremap <Leader>gf y:Grepper<Space>-query<Space><C-r>"
 vnoremap <Leader>gb y:Grepper<Space>-buffers<Space>-query<Space><C-r>"
 
 " NERDTree
-nnoremap <Leader>n :NERDTreeToggle<CR>
+nnoremap <Leader>nn :NERDTreeToggle<CR>
+nnoremap <Leader>nf :NERDTreeFind<CR>
+
+" GitGutter
+nnoremap <Leader>hn :GitGutterNextHunk<CR>
 
 nnoremap <silent> <leader> :WhichKey '<Space>'<CR>
 set timeoutlen=500
